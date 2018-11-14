@@ -39,14 +39,14 @@ int main(int argc, char* argv[])
   char *read;
   int colOne,rowOne,colTwo,rowTwo;
   
-  if(inputFileOne = fopen(argv[1],"r") != NULL){
+  if(inputFileOne = fopen("test.txt","r") != NULL){
 	  //continue;
 	  printf("here\n");
 	  printf(argv[1]);
 	  int test = fgetc(inputFileOne);
 	  printf("%c",test);
   }
-  if(inputFileTwo = fopen(argv[2],"r") != NULL){
+  if(inputFileTwo = fopen("testTwo.txt","r") != NULL){
 	  //continue;
 	  printf("here2");
   }
