@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
   char *fileOne;
   char *fileTwo;
   FILE *inputFileTwo;
-  char *line = malloc(20);
+  char *line = malloc(1024);
   char *lineTwo = NULL;
   char *read = malloc(20);
   int colOne,rowOne,colTwo,rowTwo;
