@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
   char *fileTwo;
   FILE *inputFileTwo;
   char *lineTwo = NULL;
-  char *read = (char*)malloc(sizeof(*char)*1024);
+  char read[20];
   int colOne,rowOne,colTwo,rowTwo;
   
   if(inputFileOne = fopen(argv[1],"r") != NULL){
@@ -47,7 +47,9 @@ int main(int argc, char* argv[])
 	  //continue;
 	  printf("here2");
   }
-  fgets(read,30,inputFileOne);
+  if(fgets(read,20,inputFileOne)!= NULL){
+	  printf("%s",read);
+  }
   //sscanf(read,"%d,%d",rowOne,colOne);
   //read = getline(&lineTwo,&lenTwo,inputFileTwo);
   //sscanf(read,"%d,%d",rowTwo,colTwo);
