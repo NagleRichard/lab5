@@ -30,24 +30,26 @@ int main(int argc, char* argv[])
   MPI_Init(&argc, &argv);
   MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
   MPI_Comm_rank(MPI_COMM_WORLD, &myid);
+  
   FILE *inputFileOne;
-  char *fileOne,*fileTwo;
+  char *fileOne;
+  char *fileTwo;
   FILE *inputFileTwo;
-  char *line = null;
-  char *lineTwo = null;
+  char *line = NULL;
+  char *lineTwo = NULL;
   size_t len = 0;
   size_t lenTwo = 0;
   ssize_t read;
   int colOne,rowOne,colTwo,rowTwo;
   
   inputFileOne = fopen(argv[1],"r");
-  inputFiletwo = fopen(argv[2],"r");
+  inputFileTwo = fopen(argv[2],"r");
   read = getline(&line,&len,inputFileOne);
   sscanf(read,"%d,%d",rowOne,colOne);
   read = getline(&lineTwo,&lenTwo,inputFileTwo);
   sscanf(read,"%d,%d",rowTwo,colTwo);
   fileOne = (char*)malloc(rowOne*colOne);
-  filetwo = (char*)malloc(rowTwo*colTwo);
+  fileTwo = (char*)malloc(rowTwo*colTwo);
   fgets(fileOne,(rowOne*colOne),inputFileOne);
   fgets(fileTwo,(rowTwo*colTwo),inputFileTwo);
   /*if (argc > 1) {
@@ -74,9 +76,8 @@ int main(int argc, char* argv[])
   MPI_Finalize();
   return 0;
   }*/
-  
+	}
   else{
 	  printf("Imput two file names");
-	}
 	}
 }
