@@ -17,7 +17,6 @@ void compare_matrix(double *a, double *b, int nRows, int nCols);
 
 int main(int argc, char* argv[])
 {
-	printf("hereprime");
   if(argc>2){
   int nrows, ncols;
   double *aa;	/* the A matrix */
@@ -51,7 +50,7 @@ int main(int argc, char* argv[])
 	  //continue;
 	  printf("here2");
   }
-  //read = getline(&line,&len,inputFileOne);
+  read = getline(&line,&len,inputFileOne);
   //sscanf(read,"%d,%d",rowOne,colOne);
   //read = getline(&lineTwo,&lenTwo,inputFileTwo);
   //sscanf(read,"%d,%d",rowTwo,colTwo);
