@@ -36,12 +36,13 @@ int main(int argc, char* argv[])
   char *fileTwo;
   FILE *inputFileTwo;
   char *lineTwo = NULL;
-  char read[20];
+  char *read;
   int colOne,rowOne,colTwo,rowTwo;
   
   if(inputFileOne = fopen(argv[1],"r") != NULL){
 	  //continue;
-	  printf("here");
+	  printf("here\n");
+	  printf(argv[1]);
   }
   if(inputFileTwo = fopen(argv[2],"r") != NULL){
 	  //continue;
