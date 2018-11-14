@@ -69,8 +69,12 @@ int main(int argc, char* argv[])
   printf("%d\n",colTwo);
   fileOne = (char*)malloc(rowOne*colOne);
   fileTwo = (char*)malloc(rowTwo*colTwo);
-  fgets(fileOne,(rowOne*colOne),inputFileOne);
-  fgets(fileTwo,(rowTwo*colTwo),inputFileTwo);
+  if(fgets(fileOne,(rowOne*colOne),inputFileOne) != NULL){
+	  printf("hereFinal");
+  }
+  if(fgets(fileTwo,(rowTwo*colTwo),inputFileTwo) != NULL){
+	  printf("hereFinal");
+  }
   /*if (argc > 1) {
     nrows = atoi(argv[1]);
     ncols = nrows;
