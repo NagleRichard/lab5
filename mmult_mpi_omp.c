@@ -30,9 +30,9 @@ int main(int argc, char* argv[])
   MPI_Init(&argc, &argv);
   MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
   MPI_Comm_rank(MPI_COMM_WORLD, &myid);
-  File *inputFileOne;
+  FILE *inputFileOne;
   char *fileOne,*fileTwo;
-  File *inputFileTwo;
+  FILE *inputFileTwo;
   char *line = null;
   char *lineTwo = null;
   size_t len = 0;
@@ -77,5 +77,6 @@ int main(int argc, char* argv[])
   
   else{
 	  printf("Imput two file names");
-  }
+	}
+	}
 }
