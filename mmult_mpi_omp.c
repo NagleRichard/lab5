@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
   char *lineTwo = NULL;
   char *read = (char*)malloc(1028);
   int colOne,rowOne,colTwo,rowTwo;
-  char *tocken;
+  char* tocken;
   
   if((inputFileOne = fopen("test.txt","r")) != NULL){
 	  //continue;
@@ -53,13 +53,15 @@ int main(int argc, char* argv[])
 	  printf("%s",read);
   }
   tocken = strtok(read," ");
-  rowOne = atoi(tocken[1]);
+  rowOne = atoi(tocken);
+  tocken = strtok(0," ");
+  
   printf("%d",rowOne);
-  if(fgets(read,20,inputFileTwo)!= NULL){
-	  printf("%s",read);
-  }
-  tocken = strtok(read," ");
-  fileOne = (char*)malloc(rowOne*colOne);
+  //if(fgets(read,20,inputFileTwo)!= NULL){
+//	  printf("%s",read);
+ // }
+ // tocken = strtok(read," ");
+//  fileOne = (char*)malloc(rowOne*colOne);
   //fileTwo = (char*)malloc(rowTwo*colTwo);
   //fgets(fileOne,(rowOne*colOne),inputFileOne);
  // fgets(fileTwo,(rowTwo*colTwo),inputFileTwo);
