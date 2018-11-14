@@ -55,14 +55,17 @@ int main(int argc, char* argv[])
   tocken = strtok(read," ");
   rowOne = atoi(tocken);
   tocken = strtok(0," ");
-  
+  colOne = tocken;
   printf("%d",rowOne);
-  //if(fgets(read,20,inputFileTwo)!= NULL){
-//	  printf("%s",read);
- // }
- // tocken = strtok(read," ");
-//  fileOne = (char*)malloc(rowOne*colOne);
-  //fileTwo = (char*)malloc(rowTwo*colTwo);
+  if(fgets(read,20,inputFileTwo)!= NULL){
+  printf("%s",read);
+  }
+   tocken = strtok(read," ");
+   rowTwo = atoi(tocken);
+  tocken = strtok(0," ");
+  colTwo = tocken;
+  fileOne = (char*)malloc(rowOne*colOne);
+  fileTwo = (char*)malloc(rowTwo*colTwo);
   //fgets(fileOne,(rowOne*colOne),inputFileOne);
  // fgets(fileTwo,(rowTwo*colTwo),inputFileTwo);
   /*if (argc > 1) {
