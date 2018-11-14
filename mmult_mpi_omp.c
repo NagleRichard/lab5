@@ -52,11 +52,12 @@ int main(int argc, char* argv[])
 	  printf("%s",read);
   }
   sscanf(read,"%d,%d",rowOne,colOne);
+  printf("%d",rowOne);
   if(fgets(read,20,inputFileTwo)!= NULL){
 	  printf("%s",read);
   }
-  //sscanf(read,"%d,%d",rowTwo,colTwo);
-  //fileOne = (char*)malloc(rowOne*colOne);
+  sscanf(read,"%d,%d",rowTwo,colTwo);
+  fileOne = (char*)malloc(rowOne*colOne);
   //fileTwo = (char*)malloc(rowTwo*colTwo);
   //fgets(fileOne,(rowOne*colOne),inputFileOne);
  // fgets(fileTwo,(rowTwo*colTwo),inputFileTwo);
