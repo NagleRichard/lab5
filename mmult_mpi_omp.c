@@ -50,7 +50,7 @@ int main(int argc, char* argv[])
 	  //continue;
 	  printf("here2");
   }
-  read = getline(&line,&len,inputFileOne);
+  fgets(read,30,inputFileOne);
   //sscanf(read,"%d,%d",rowOne,colOne);
   //read = getline(&lineTwo,&lenTwo,inputFileTwo);
   //sscanf(read,"%d,%d",rowTwo,colTwo);
