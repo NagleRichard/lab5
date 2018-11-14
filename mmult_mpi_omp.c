@@ -37,9 +37,7 @@ int main(int argc, char* argv[])
   FILE *inputFileTwo;
   char *line = malloc(20);
   char *lineTwo = NULL;
-  size_t len = 20;
-  size_t lenTwo = 0;
-  ssize_t read;
+  char *read = malloc(20);
   int colOne,rowOne,colTwo,rowTwo;
   
   if(inputFileOne = fopen(argv[1],"r") != NULL){
