@@ -44,13 +44,13 @@ int main(int argc, char* argv[])
   
   if(inputFileOne = fopen(argv[1],"r") != NULL){
 	  //continue;
-	  printf("here");
+	  fprintf("here");
   }
   if(inputFileTwo = fopen(argv[2],"r") != NULL){
 	  //continue;
-	  printf("here2");
+	  fprintf("here2");
   }
-  read = getline(&line,&len,inputFileOne);
+  //read = getline(&line,&len,inputFileOne);
   //sscanf(read,"%d,%d",rowOne,colOne);
   //read = getline(&lineTwo,&lenTwo,inputFileTwo);
   //sscanf(read,"%d,%d",rowTwo,colTwo);
