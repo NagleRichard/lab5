@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
   tocken = strtok(read," ");
   rowOne = atoi(tocken);
   tocken = strtok(0," ");
-  colOne = tocken;
+  colOne = atoi(tocken);
   printf("%d\n",rowOne);
   printf("%d\n",colOne);
   if(fgets(read,20,inputFileTwo)!= NULL){
@@ -64,7 +64,7 @@ int main(int argc, char* argv[])
    tocken = strtok(read," ");
    rowTwo = atoi(tocken);
   tocken = strtok(0," ");
-  colTwo = tocken;
+  colTwo = atoi(tocken);
   printf("%d\n",rowTwo);
   printf("%d\n",colTwo);
   fileOne = (char*)malloc(rowOne*colOne);
