@@ -36,15 +36,13 @@ int main(int argc, char* argv[])
   char *fileTwo;
   FILE *inputFileTwo;
   char *lineTwo = NULL;
-  char *read;
+  char *read = (char*)malloc(1028);
   int colOne,rowOne,colTwo,rowTwo;
   
   if((inputFileOne = fopen("test.txt","r")) != NULL){
 	  //continue;
 	  printf("here\n");
 	  printf(argv[1]);
-	  int test = fgetc(inputFileOne);
-	  printf("%c",test);
   }
   if((inputFileTwo = fopen("testTwo.txt","r")) != NULL){
 	  //continue;
