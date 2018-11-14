@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
 	  int test = fgetc(inputFileOne);
 	  printf("%c",test);
   }
-  if(inputFileTwo = fopen("testTwo.txt","r") != NULL){
+  if((inputFileTwo = fopen("testTwo.txt","r")) != NULL){
 	  //continue;
 	  printf("here2");
   }
