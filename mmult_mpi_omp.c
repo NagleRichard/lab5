@@ -40,7 +40,7 @@ int main(int argc, char* argv[])
   size_t len = 0;
   size_t lenTwo = 0;
   ssize_t read;
-  int *colOne,*rowOne,*colTwo,*rowTwo;
+  int colOne,rowOne,colTwo,rowTwo;
   
   if(inputFileOne = fopen(argv[1],"r") != NULL){
 	  continue;
@@ -54,8 +54,8 @@ int main(int argc, char* argv[])
   sscanf(read,"%d,%d",rowTwo,colTwo);
   fileOne = (char*)malloc(rowOne*colOne);
   fileTwo = (char*)malloc(rowTwo*colTwo);
-  fgets(fileOne,(rowOne*colOne),inputFileOne);
-  fgets(fileTwo,(rowTwo*colTwo),inputFileTwo);
+  //fgets(fileOne,(rowOne*colOne),inputFileOne);
+ // fgets(fileTwo,(rowTwo*colTwo),inputFileTwo);
   /*if (argc > 1) {
     nrows = atoi(argv[1]);
     ncols = nrows;
