@@ -40,10 +40,14 @@ int main(int argc, char* argv[])
   size_t len = 0;
   size_t lenTwo = 0;
   ssize_t read;
-  int colOne,rowOne,colTwo,rowTwo;
+  int *colOne,*rowOne,*colTwo,*rowTwo;
   
-  inputFileOne = fopen(argv[1],"r");
-  inputFileTwo = fopen(argv[2],"r");
+  if(inputFileOne = fopen(argv[1],"r") != NULL){
+	  continue;
+  }
+  if(inputFileTwo = fopen(argv[2],"r") != NULL){
+	  continue;
+  }
   read = getline(&line,&len,inputFileOne);
   sscanf(read,"%d,%d",rowOne,colOne);
   read = getline(&lineTwo,&lenTwo,inputFileTwo);
