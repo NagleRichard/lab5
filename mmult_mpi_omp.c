@@ -43,8 +43,8 @@ int main(int argc, char* argv[])
 	  //continue;
 	  printf("here\n");
 	  printf(argv[1]);
-	  char test = fgetc(inputFileOne);
-	  printf(test);
+	  int test = fgetc(inputFileOne);
+	  printf("%c",test);
   }
   if(inputFileTwo = fopen(argv[2],"r") != NULL){
 	  //continue;
