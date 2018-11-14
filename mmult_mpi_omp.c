@@ -43,10 +43,10 @@ int main(int argc, char* argv[])
   int colOne,rowOne,colTwo,rowTwo;
   
   if(inputFileOne = fopen(argv[1],"r") != NULL){
-	  continue;
+	  //continue;
   }
   if(inputFileTwo = fopen(argv[2],"r") != NULL){
-	  continue;
+	  //continue;
   }
   //read = getline(&line,&len,inputFileOne);
   //sscanf(read,"%d,%d",rowOne,colOne);
