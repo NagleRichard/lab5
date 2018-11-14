@@ -48,12 +48,12 @@ int main(int argc, char* argv[])
   if(inputFileTwo = fopen(argv[2],"r") != NULL){
 	  continue;
   }
-  read = getline(&line,&len,inputFileOne);
-  sscanf(read,"%d,%d",rowOne,colOne);
-  read = getline(&lineTwo,&lenTwo,inputFileTwo);
-  sscanf(read,"%d,%d",rowTwo,colTwo);
-  fileOne = (char*)malloc(rowOne*colOne);
-  fileTwo = (char*)malloc(rowTwo*colTwo);
+  //read = getline(&line,&len,inputFileOne);
+  //sscanf(read,"%d,%d",rowOne,colOne);
+  //read = getline(&lineTwo,&lenTwo,inputFileTwo);
+  //sscanf(read,"%d,%d",rowTwo,colTwo);
+  //fileOne = (char*)malloc(rowOne*colOne);
+  //fileTwo = (char*)malloc(rowTwo*colTwo);
   //fgets(fileOne,(rowOne*colOne),inputFileOne);
  // fgets(fileTwo,(rowTwo*colTwo),inputFileTwo);
   /*if (argc > 1) {
