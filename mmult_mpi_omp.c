@@ -17,6 +17,7 @@ void compare_matrix(double *a, double *b, int nRows, int nCols);
 
 int main(int argc, char* argv[])
 {
+	printf("hereprime");
   if(argc>2){
   int nrows, ncols;
   double *aa;	/* the A matrix */
