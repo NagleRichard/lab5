@@ -51,8 +51,10 @@ int main(int argc, char* argv[])
   if(fgets(read,20,inputFileOne)!= NULL){
 	  printf("%s",read);
   }
-  //sscanf(read,"%d,%d",rowOne,colOne);
-  //read = getline(&lineTwo,&lenTwo,inputFileTwo);
+  sscanf(read,"%d,%d",rowOne,colOne);
+  if(fgets(read,20,inputFileTwo)!= NULL){
+	  printf("%s",read);
+  }
   //sscanf(read,"%d,%d",rowTwo,colTwo);
   //fileOne = (char*)malloc(rowOne*colOne);
   //fileTwo = (char*)malloc(rowTwo*colTwo);
