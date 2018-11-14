@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
   char *read;
   int colOne,rowOne,colTwo,rowTwo;
   
-  if(inputFileOne = fopen("test.txt","r") != NULL){
+  if((inputFileOne = fopen("test.txt","r")) != NULL){
 	  //continue;
 	  printf("here\n");
 	  printf(argv[1]);
